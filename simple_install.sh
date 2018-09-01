@@ -10,7 +10,7 @@ sudo yum remove -y docker \
                   docker-engine
 rm -rf /var/lib/docker && rm -rf /data/storage/
 sudo yum install -y yum-utils && yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
-mkdir -p /opt/gezhiwei/docker/ /etc/docker/
+mkdir -p /etc/docker/
 tee /etc/docker/daemon.json <<-'EOF'
 {
   "registry-mirrors": ["https://dthsa6yd.mirror.aliyuncs.com" ]
