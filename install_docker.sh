@@ -207,7 +207,7 @@ tee /etc/docker/daemon.json <<-'EOF'
   "registry-mirrors": ["https://dthsa6yd.mirror.aliyuncs.com" ]
 }
 EOF
-yum install -y docker-ce-18.06.0.ce-3.el7
+yum install -y docker-ce
 chmod +x /opt/gezhiwei/docker/openssh-cert-server.py && cd /opt/gezhiwei/docker/ && python openssh-cert-server.py $IP
 echo "ca certifate has been installed -------------------------------------------------------------------------"
 echo "ca certifate has been installed -------------------------------------------------------------------------"
