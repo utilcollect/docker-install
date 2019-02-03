@@ -16,7 +16,7 @@ tee /etc/docker/daemon.json <<-'EOF'
   "registry-mirrors": ["https://dthsa6yd.mirror.aliyuncs.com" ]
 }
 EOF
-yum install -y docker-ce-18.06.0.ce-3.el7
+yum install -y docker-ce
 systemctl start docker && systemctl stop docker && mkdir -p /data/storage && mv /var/lib/docker /data/storage/ && ln -s /data/storage/docker /var/lib/docker
 systemctl start docker
 find / -name 'simple_install.sh' |xargs rm -rf
