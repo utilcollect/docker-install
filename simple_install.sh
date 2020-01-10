@@ -13,7 +13,7 @@ sudo yum install -y yum-utils && yum-config-manager --add-repo http://mirrors.al
 mkdir -p /etc/docker/
 tee /etc/docker/daemon.json <<-'EOF'
 {
-  "registry-mirrors": ["https://mirror.ccs.tencentyun.com/" ]
+  "registry-mirrors": ["https://9rudmnh3.mirror.aliyuncs.com" ]
 }
 EOF
 yum install -y docker-ce
